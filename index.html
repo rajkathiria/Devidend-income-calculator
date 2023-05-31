@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Devidend calculator</title>
+
+    </head>
+
+<br style="text-align:center;">
+	<h1 style="color:green;">
+        Calculator
+	</h1>
+	<h2>How much you want per year:</h2>
+	<input type="number" id="myText" >
+    <h2>devidend yeild per year:</h2>
+	<input type="number" id="myText1"></br></br>
+	<button type="button" onclick="myFunction()">Try it</button>
+    <p>Total amount you need to invest:</p>
+	<p id="demo"></p>
+
+	
+	<script>
+	
+	// Here the value is stored in new variable x
+	function myFunction() {
+		var x = document.getElementById("myText").value;
+		//document.getElementById("demo").innerHTML = x;
+        var y = document.getElementById("myText1").value;
+        var z=x*(100/y);
+		document.getElementById("demo").innerHTML = z;
+       
+	}
+	</script>
+</body>
+
+</html>
